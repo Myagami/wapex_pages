@@ -1,0 +1,24 @@
+.doc-index{
+  display: block;
+  color: #900;
+}
+
+.index_image{
+  width: 400px;
+  height: 200px;
+}
+
+.bg-platform{
+  @extend .index_image;
+  background-image: url("/assets/img/Platform_bg.png");
+}
+
+.bg-footbridge{
+  @extend .index_image;
+  background-image: url("/assets/img/FootBridge_bg.png");
+}
+
+.bg-cublic{
+  @extend .index_image;
+  background-image: url("/assets/img/Cublic_bg.png");
+}

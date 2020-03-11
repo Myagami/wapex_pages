@@ -1,0 +1,19 @@
+extend ../../layouts/_default.pug
+
+block variables
+  - let ogp = true
+  - var doc_path = "../../"
+
+block content
+  .container
+    .row
+      .col-6.border.bg-platform
+        h3
+          a(href="docs/platform").doc-index Platform
+      .col-6.border.bg-footbridge
+        h3
+          a(href="docs/footbridge").doc-index FootBridge
+    .row
+      .col-6.border.bg-cublic
+        h3
+          a(href="docs/cublic").doc-index Cublic
