@@ -8,8 +8,6 @@
 
 ![eli](src/img/ogp.png)
 
-Eliは完全オレオレ仕様のフロントエンド開発用テンプレートです。
-
 ## About
 
-このページは[Eli|github](https://github.com/windyakin/Eli)を用いて作成しております
+このページは[Eli - windyakin|github](https://github.com/windyakin/Eli)を用いて作成しております
