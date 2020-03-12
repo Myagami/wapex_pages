@@ -1,6 +1,6 @@
 
 header.mb-3
-  .navbar.navbar-expand-md.navbar-light.bg-dark
+  .navbar.navbar-expand-md.navbar-light.bg-secondary
     .container
       a.navbar-brand(href=site.url) YIC Docs
       button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation")
@@ -8,7 +8,12 @@ header.mb-3
 
       nav.collapse.navbar-collapse#navbar-main
         ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href="/") Home
-
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href="#", role="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")#docs Docs
+            .dropdown-menu(aria-labelledby="docs")
+              a.dropdown-item(href="/docs/platform") Platform
+              a.dropdown-item(href="/docs/footbridge") Footbridge
+              a.dropdown-item(href="/docs/cublic") Cublic
+          li.nav-item
+            a.nav-link(href="/") Example
 

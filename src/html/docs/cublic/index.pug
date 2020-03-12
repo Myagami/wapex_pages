@@ -1,19 +1,25 @@
 extend ../../layouts/_default.pug
 
 block variables
+  include ../_addon_list.pug
   - let ogp = true
   - var doc_path = "../../"
 
 block content
   .container
     .row
-      .col-6.border.bg-platform
-        h3
-          a(href="docs/platform").doc-index Platform
-      .col-6.border.bg-footbridge
-        h3
-          a(href="docs/footbridge").doc-index FootBridge
-    .row
-      .col-6.border.bg-cublic
-        h3
-          a(href="docs/cublic").doc-index Cublic
+      .col-12.border
+        h2 Extends
+        p プラットホームの機能を拡張するアドオン群
+    each addns in cublic
+      .row
+        .col-12.border
+           h3 #{addns.name}
+      .row
+        .col-4.border
+          img(src=`${doc_path}/assets/img/docs/cublic/doc-${addns.image}.png`, alt="")
+        .col-7.border
+          p #{addns.dict}
+        .col-1.border
+          a(href=`${addns.dir}`) LINK
+
