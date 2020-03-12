@@ -4,36 +4,36 @@ block variables
   include ../_addon_list.pug
   - let ogp = true
   - var doc_path = "../../"
-
+  - var doc_nav_path = "../"
 block content
   .container
     .row
       .col-12.border
         h2 Extends
-        p プラットホームの機能を拡張するアドオン群
+        p 跨線橋の機能を拡張するアドオン群
     each addns in footbridge
       .row
         .col-12.border
            h3 #{addns.name}
       .row
-        .col-4.border
+        .col-3.border
           img(src=`${doc_path}/assets/img/docs/footbridge/doc-${addns.image}.png`, alt="")
-        .col-7.border
-          p #{addns.dict}
+        .col-8.border
+          p !{addns.dict}
         .col-1.border
           a(href=`${addns.dir}`) LINK
     .row
       .col-12.border
         h2 Wide
-        p プラットホームのサイズを広げるアドオン群
+        p 跨線橋のサイズを広げるアドオン群
     each addns in wide_footbridge
       .row
         .col-12.border
            h3 #{addns.name}
       .row
-        .col-4.border
+        .col-3.border
           img(src=`${doc_path}/assets/img/docs/footbridge/doc-wide-${addns.image}.png`, alt="")
-        .col-7.border
-          p #{addns.dict}
+        .col-8.border
+          p !{addns.dict}
         .col-1.border
           a(href=`${addns.dir}`) LINK

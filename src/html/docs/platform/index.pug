@@ -16,10 +16,10 @@ block content
         .col-12.border
            h3 #{addns.name}
       .row
-        .col-4.border
+        .col-3.border
           img(src=`${doc_path}/assets/img/docs/platform/doc-${addns.image}.png`, alt="")
-        .col-7.border
-          p #{addns.dict}
+        .col-8.border
+          p !{addns.dict}
         .col-1.border
           a(href=`${addns.dir}`) LINK
     .row
@@ -31,9 +31,9 @@ block content
         .col-12.border
            h3 #{addns.name}
       .row
-        .col-4.border
+        .col-3.border
           img(src=`${doc_path}/assets/img/docs/platform/doc-wide-${addns.image}.png`, alt="")
-        .col-7.border
-          p #{addns.dict}
+        .col-8.border
+          p !{addns.dict}
         .col-1.border
           a(href=`${addns.dir}`) LINK
